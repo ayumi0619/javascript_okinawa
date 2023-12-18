@@ -1,0 +1,69 @@
+@charset "UTF-8";
+body{
+  background: #f6f195;
+}
+h1 {
+    text-align: center;
+    background: #f6f195;
+  }
+  div {
+    background: #f6f195;
+  }
+
+  #gallery {
+    display: grid;
+    max-width: 1000px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .img-item {
+    opacity: 0;
+    filter: blur(10px);
+    width: 100%;
+  }
+  
+  .img-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .img-item p {
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    color: #EEE;
+  }
+  .slide-in {
+    opacity: 0;
+  }
+
+  #loading {
+    transition: all 3s; /*ローディングにかかる時間*/
+    background-color: #FFF;
+    z-index: 999;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+  }
+  
+  .loading-text {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .spin {
+    width: 64px;
+    height: auto;
+  }
+  
+  .loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
