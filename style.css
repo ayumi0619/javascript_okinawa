@@ -18,6 +18,11 @@ h1 {
     gap: 20px;
   }
   
+  .container {
+    max-width: 750px;
+    margin: auto;
+  }
+
   .img-item {
     opacity: 0;
     filter: blur(10px);
@@ -33,6 +38,7 @@ h1 {
     text-align: center;
   }
   
+
   footer {
     text-align: center;
     color: #EEE;
